@@ -1,0 +1,22 @@
+[
+  {
+    "name": "a_example",
+    "location" : "G:\\IMT\\HashCode"
+  },
+  {
+    "name": "b_small",
+    "location" : "G:\\IMT\\HashCode"
+  },
+  {
+    "name": "c_medium",
+    "location" : "G:\\IMT\\HashCode"
+  },
+  {
+    "name": "d_quite_big",
+    "location" : "G:\\IMT\\HashCode"
+  },
+  {
+    "name": "e_also_big",
+    "location" : "G:\\IMT\\HashCode"
+  }
+]
