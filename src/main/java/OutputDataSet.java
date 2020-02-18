@@ -87,6 +87,12 @@ public class OutputDataSet {
         }
     }
 
+    public void addUnsettledPizzas() {
+        for (int i = this.unsettledPizzas.size() - 1; i >= 0; i--) {
+            this.addAPizza(this.unsettledPizzas.get(i));
+        }
+    }
+
     @Override
     public String toString() {
         return "OutputDataSet{" +

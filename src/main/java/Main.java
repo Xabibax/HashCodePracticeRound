@@ -27,6 +27,7 @@ public class Main {
             OutputDataSet outputDataSet = new OutputDataSet(inputDataSet.getParticipants(), new HashMap<>());
             outputDataSet.setUnsettledPizzas(inputDataSet.getMapPizza());
             outputDataSet.removeLittleUntilScore();
+            outputDataSet.addUnsettledPizzas();
 
             System.out.println(System.lineSeparator() +
                     "Score : \t\t" + outputDataSet.getScore() + System.lineSeparator() +
