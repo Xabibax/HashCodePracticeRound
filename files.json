@@ -1,22 +1,22 @@
 [
   {
     "name": "a_example",
-    "location" : "G:\\IMT\\HashCode"
+    "location" : "C:\\Users\\xavie\\OneDrive\\Bureau\\pizzas"
   },
   {
     "name": "b_small",
-    "location" : "G:\\IMT\\HashCode"
+    "location" : "C:\\Users\\xavie\\OneDrive\\Bureau\\pizzas"
   },
   {
     "name": "c_medium",
-    "location" : "G:\\IMT\\HashCode"
+    "location" : "C:\\Users\\xavie\\OneDrive\\Bureau\\pizzas"
   },
   {
     "name": "d_quite_big",
-    "location" : "G:\\IMT\\HashCode"
+    "location" : "C:\\Users\\xavie\\OneDrive\\Bureau\\pizzas"
   },
   {
     "name": "e_also_big",
-    "location" : "G:\\IMT\\HashCode"
+    "location" : "C:\\Users\\xavie\\OneDrive\\Bureau\\pizzas"
   }
 ]
