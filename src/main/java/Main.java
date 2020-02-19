@@ -14,6 +14,7 @@ public class Main {
     public static List<Pair<String, String>> fileLocations = new ArrayList<>();
 
     public static void main(String[] args) throws Exception {
+        long startTimeMillis = System.currentTimeMillis();
 	// write your code here
         intiatilseFilesLocation();
         for (Pair<String, String> fileLocation : fileLocations) {
@@ -26,7 +27,6 @@ public class Main {
 
             OutputDataSet outputDataSet = new OutputDataSet(inputDataSet.getParticipants(), new HashMap<>());
             outputDataSet.setUnsettledPizzas(inputDataSet.getMapPizza());
-            outputDataSet.removeLittleUntilScore();
             outputDataSet.addUnsettledPizzas();
 
             System.out.println(System.lineSeparator() +
@@ -43,7 +43,7 @@ public class Main {
                     fileLocation.getValue() + "\\" + fileLocation.getKey() + ".out"
             );
         }
-
+        System.out.println(System.lineSeparator() + "Execution in : " + (System.currentTimeMillis() - startTimeMillis) + " milliseconds.");
     }
 
     private static void intiatilseFilesLocation() throws IOException, ParseException {
@@ -58,11 +58,9 @@ public class Main {
         JSONArray filesArray = (JSONArray) obj;
 
         //Iterate over files
-        filesArray.forEach( file -> {
-            fileLocations.add(new Pair<>((String) ((JSONObject) file).get("name"),
-                                         (String) ((JSONObject) file).get("location")
-            ));
-        } );
+        filesArray.forEach(file -> fileLocations.add(new Pair<>((String) ((JSONObject) file).get("name"),
+                (String) ((JSONObject) file).get("location")
+        )));
     }
 
     private static InputDataSet getInputDataSet(String filePath) throws Exception {
